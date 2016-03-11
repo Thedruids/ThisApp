@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ThisApp</string>
+    <string name="helloWorld">Hello World! This is a String message</string>
 </resources>
