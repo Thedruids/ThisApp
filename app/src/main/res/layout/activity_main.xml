@@ -5,46 +5,47 @@
     android:background="#98f00a"
     android:orientation="vertical"
     >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#f00"
+            android:layout_weight="1"
+            />
 
         <View
-    android:layout_height="144dp"
-    android:layout_width="144dp"
-    android:background="#ce50ff"
-    />
-
-    <View
-        android:layout_height="144dp"
-        android:layout_width="144dp"
-        android:background="#0f0"
-        />
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#0f0"
+            android:layout_weight="1"
+            />
 
     </LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#000">
 
-    <View
-        android:layout_height="144dp"
-        android:layout_width="144dp"
-        android:background="#f00"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#00f"
+            android:layout_weight="1"
+            />
 
-    <TextView
-        android:layout_width="144dp"
-        android:layout_height="144dp"
-        android:text="Hello"
-        android:background="@color/colorPrimaryDark"
-        android:gravity="center"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#f000ea"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
 
 
-</LinearLayout>
-
-    
 
 </LinearLayout>
 
