@@ -1,60 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<RelativeLayout
     android:layout_height="match_parent"
+   android:layout_width="match_parent"
     android:background="#ff0"
-    android:orientation="vertical"
-    >
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_weight="1"
-        android:gravity="center|bottom">
-        <TextView
-
-        android:layout_width="150dp"
-        android:layout_height="256dp"
-        android:text="Hello there"
+    <View
+        android:id="@+id/redBox"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
         android:background="#f00"
-        android:gravity="bottom|right"
-
         />
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="256dp"
-            android:text="Hello there"
-            android:background="#0f0"
-            android:gravity="bottom"
 
-            />
-    </LinearLayout>
+    <View
+        android:id="@+id/blueBox"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
 
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="500dp"
-    android:layout_weight="1"
-    android:gravity="center_horizontal"
-    >
-    <TextView
-
-        android:layout_width="150dp"
-        android:layout_height="256dp"
-        android:text="Hello there"
-        android:background="#f0f"
-        android:gravity="top|right"
-
-        />
-    <TextView
-
-        android:layout_width="150dp"
-        android:layout_height="256dp"
-        android:text="Hello there"
+        android:layout_alignParentRight="true"
         android:background="#00f"
+        />
+
+
+    <View
+        android:id="@+id/greenBox"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_alignParentBottom="true"
+        android:background="#0f0"
+        />
+
+
+
+    <View
+        android:id="@+id/purpleBox"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+      android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#f0f"
+        />
+
+
+
+    <View
+        android:id="@+id/blackBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/blueBox"
+        android:layout_toRightOf="@id/redBox"
+        android:layout_below="@id/redBox"
+        android:layout_above="@id/greenBox"
+        android:background="#000"
 
         />
 
-        </LinearLayout>
-
-
-</LinearLayout>
+    </RelativeLayout>
