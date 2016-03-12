@@ -1,58 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     android:layout_height="match_parent"
-   android:layout_width="match_parent"
+    android:layout_width="match_parent"
+    android:layout_margin="48dp"
     android:background="#ff0"
+    android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <View
-        android:id="@+id/redBox"
-        android:layout_width="144dp"
-        android:layout_height="144dp"
-        android:background="#f00"
-        />
 
-    <View
-        android:id="@+id/blueBox"
-        android:layout_width="144dp"
-        android:layout_height="144dp"
-
-        android:layout_alignParentRight="true"
-        android:background="#00f"
-        />
-
-
-    <View
-        android:id="@+id/greenBox"
-        android:layout_width="144dp"
-        android:layout_height="144dp"
-        android:layout_alignParentBottom="true"
-        android:background="#0f0"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World, this is a string created for demo purposes"
+        android:textSize="24sp"
+        android:background="#ffd"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="50dp"
         />
 
 
 
-    <View
-        android:id="@+id/purpleBox"
-        android:layout_width="144dp"
-        android:layout_height="144dp"
-      android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:background="#f0f"
-        />
-
-
-
-    <View
-        android:id="@+id/blackBox"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_toLeftOf="@id/blueBox"
-        android:layout_toRightOf="@id/redBox"
-        android:layout_below="@id/redBox"
-        android:layout_above="@id/greenBox"
-        android:background="#000"
-
-        />
-
-    </RelativeLayout>
+</LinearLayout>
