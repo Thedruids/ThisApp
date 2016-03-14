@@ -1,51 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#98f00a"
+    android:background="#ffd"
     android:orientation="vertical"
+    android:padding="14dp"
     >
 
-    <LinearLayout
+  <EditText
+      android:id="@+id/userEditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Enter Username"
+      android:inputType="textVisiblePassword|textNoSuggestions"
+      android:layout_above="@+id/passEditText"
+      android:freezesText="true"/>
+
+
+    <EditText
+        android:id="@+id/passEditText"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="#f00"
-            android:layout_weight="1"
-            />
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:freezesText="true"
+        />
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="#0f0"
-            android:layout_weight="1"
-            />
-
-    </LinearLayout>
-
-    <LinearLayout
+    <Button
+        android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="#00f"
-            android:layout_weight="1"
-            />
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@+id/passEditText"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/White"/>
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="#f000ea"
-            android:layout_weight="1"
-            />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/txtView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have rotated the screen 0 times"/>
+    <TextView
+        android:id="@+id/txtView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Screen Orientation: Portrait"
+        android:layout_below="@+id/txtView1"/>
 
 
 
-</LinearLayout>
+
+</RelativeLayout>
 
